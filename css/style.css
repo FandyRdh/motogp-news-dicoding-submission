@@ -9,15 +9,62 @@
     padding: 0;
   }
 
-/* header */
-header .top-header{
-    background-color: aquamarine;
-    height: 60px;
+.container{
+    padding: 42px;
 }
 
-header .jumbo-tron{
-    background-color: gray;
-    height: 400px;
+header .top-header{
+    background-color: grey;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .top-header img {
+    width: 90px;
+}
+
+header .jumbotron{
+    height: 580px;
+    background-image: url(/assets/images/jumbotron-image.png);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .sub-title{
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.jumbotron h1{
+    font-size: 64px;
+    font-weight: 600;
+    color: white;
+    line-height: 95%;
+}
+
+.countries-date{
+    display: flex;
+    margin-top: 15px;
+}
+
+.countries-date img{
+    width: 72px;
+    height: 48px;
+    margin-right: 15px;
+}
+
+.countries-date h4{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
 }
 
 /* main */
