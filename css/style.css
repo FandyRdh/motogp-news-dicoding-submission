@@ -10,11 +10,10 @@
   }
 
 .container{
-    padding: 42px;
+    padding: 0 42px;
 }
 
 header .top-header{
-    background-color: grey;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -27,7 +26,7 @@ header .top-header img {
 
 header .jumbotron{
     height: 580px;
-    background-image: url(/assets/images/jumbotron-image.png);
+    background-image: url(../assets/images/jumbotron-image.png);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -37,7 +36,7 @@ header .jumbotron{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.jumbotron .sub-title{
+.sub-title{
     font-size: 24px;
     font-weight: 400;
     color: white;
@@ -69,19 +68,48 @@ header .jumbotron{
 
 /* main */
 main{
-    background-color: rgb(96, 151, 114);
-    height: 500px;
-    display: flex;
+   display: flex;
 }
 
 main #content{
-    background-color: rgb(135, 135, 228);
-    height: 100%;
     width: 70%;
+    padding-bottom: 50px;
 }
+/* content */
+article section {
+    margin-top: 20px;
+}
+
+.race-result {
+    margin-top: 20px;
+    display: flex;
+}
+
+.img-result{
+    width: 330px;
+}
+
+article .desc-sprint-race{
+    padding: 0 15px 0 0;
+}
+
+article .desc-main-race{
+    padding: 0 0 0 15px;
+}
+
+article section h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+article section p{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* aside */
 main aside{
     background-color: rgb(192, 228, 135);
-    height: 100%;
     width: 30%;
 }
 /* footer */
@@ -95,23 +123,47 @@ footer .lower-footer{
 }
 
 /* mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { 
+    /* utility */
+    .container{
+        padding: 0 20px;
+    }
+
+    /* Header */
+    header .top-header img {
+        width: 65px;
+    }
+    
+    header .jumbotron{
+        height: 250px;
+    }
+
+    .sub-title{
+        font-size: 20px;
+    }
+    
+    .jumbotron h1{
+        font-size: 30px;
+    }
+    
+    .countries-date{
+        margin-top: 8px;
+    }
+    
+    .countries-date img{
+        width: 41px;
+        height: 27px;
+        margin-right: 10px;
+    }
+    
+    .countries-date h4{
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+
     /* main */
     main{
-        background-color: rgb(96, 151, 114);
-        height: 300px;
         display: flex;
         flex-direction: column;
     }
-
-    main #content{
-        background-color: rgb(135, 135, 228);
-        height: 100%;
-        width: 100%;
-    }
-    main aside{
-        background-color: rgb(192, 228, 135);
-        height: 100%;
-        width: 100%;
-    }
-}
