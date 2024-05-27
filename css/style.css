@@ -87,16 +87,22 @@ article section {
 
 .img-result{
     width: 330px;
+    object-fit: contain; 
 }
 
 article .desc-sprint-race{
-    padding: 0 15px 0 0;
+    margin-right: 15px;
 }
 
 article .desc-main-race{
-    padding: 0 0 0 15px;
+    margin-left: 15px;
 }
 
+section .sub-title{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
 article section h2{
     font-size: 32px;
     font-weight: 600;
@@ -112,21 +118,55 @@ main aside{
     background-color: rgb(192, 228, 135);
     width: 30%;
 }
+
 /* footer */
+/* upper */
 footer .upper-footer{
-    background-color: rgb(157, 245, 245);
-    height: 200px;
+    display: flex;
+    padding: 20px 250px;
+    justify-content:space-between;
 }
-footer .lower-footer{
-    background-color: rgb(53, 96, 235);
-    height: 50px;
+footer .group-link{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 20px; */
+}
+footer .group-link a{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
 }
 
-/* mobile */
-@media only screen and (max-width: 600px) { 
+footer .group-link a:hover{
+    text-decoration:underline;
+}
+
+/* lower */
+footer .lower-footer{
+    border-top: 1px solid rgb(185, 185, 185);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer .lower-footer p{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+/* mobile & tablet */
+@media only screen and (max-width: 900px) { 
     /* utility */
     .container{
-        padding: 0 20px;
+        padding: 0px;
+    }
+
+    section, .jumbotron, aside p    {
+        padding: 15px;
     }
 
     /* Header */
@@ -164,7 +204,60 @@ footer .lower-footer{
 
     /* main */
     main{
-        display: flex;
         flex-direction: column;
     }
+
+    /* #content */
+    main #content{
+        width: 100%;
+    }
+
+    .race-result {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .race-result .img-result{
+        order: 1;
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .race-result .desc-sprint-race, .race-result .desc-main-race{
+        order: 2;
+        margin: 0;
+        width: 100%;
+    }
+
+    section p{
+        text-align: justify;
+    }
+
+    /* aside */
+    main aside{
+        width: 100%;
+    }
+
+    /* footer */
+
+    /* upper */
+    footer .upper-footer{
+        padding: 10px 0 30px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    footer .group-link{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    footer .group-link a{
+        font-size: 14px;
+    }
+    /* lower */
+    footer .lower-footer{
+        padding: 15px;
+    }
 }
+
+
