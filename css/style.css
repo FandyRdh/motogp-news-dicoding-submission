@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    /* main-font */
+    font-family: "Quicksand", sans-serif;
+
+    /* remove-default margin */
+    margin: 0;
+    padding: 0;
+  }
+
+/* header */
+header .top-header{
+    background-color: aquamarine;
+    height: 60px;
+}
+
+header .jumbo-tron{
+    background-color: gray;
+    height: 400px;
+}
+
+/* main */
+main{
+    background-color: rgb(96, 151, 114);
+    height: 500px;
+    display: flex;
+}
+
+main #content{
+    background-color: rgb(135, 135, 228);
+    height: 100%;
+    width: 70%;
+}
+main aside{
+    background-color: rgb(192, 228, 135);
+    height: 100%;
+    width: 30%;
+}
+/* footer */
+footer .upper-footer{
+    background-color: rgb(157, 245, 245);
+    height: 200px;
+}
+footer .lower-footer{
+    background-color: rgb(53, 96, 235);
+    height: 50px;
+}
