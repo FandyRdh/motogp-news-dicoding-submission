@@ -46,3 +46,25 @@ footer .lower-footer{
     background-color: rgb(53, 96, 235);
     height: 50px;
 }
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    /* main */
+    main{
+        background-color: rgb(96, 151, 114);
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #content{
+        background-color: rgb(135, 135, 228);
+        height: 100%;
+        width: 100%;
+    }
+    main aside{
+        background-color: rgb(192, 228, 135);
+        height: 100%;
+        width: 100%;
+    }
+}
