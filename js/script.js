@@ -30,7 +30,7 @@ function tambahkanRiderKeDiv() {
                 <div class="team">${dataRider[i][1]}</div>
             </div>
             <div class="flag-country">
-                <img src="assets/images/flag/${dataRider[i][2]}.png" alt="flag-${dataRider[i][2]}">
+                <img src="assets/images/flag/${dataRider[i][2].toLowerCase()}.png" alt="flag-${dataRider[i][2]}">
                 <h5>${dataRider[i][2]}</h5>
             </div>
             <div class="point-desc">
