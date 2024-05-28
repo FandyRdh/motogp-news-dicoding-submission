@@ -18,7 +18,6 @@ function tambahkanRiderKeDiv() {
     var riderContainer = document.querySelector('.championship .list');
     
     for (let i = 0; i < dataRider.length; i++) {
-        console.log(i+1+".",dataRider[i][0],dataRider[i][1],dataRider[i][2],dataRider[i][3])
         var newRiderDiv = document.createElement('div');
         newRiderDiv.classList.add('rider');
 

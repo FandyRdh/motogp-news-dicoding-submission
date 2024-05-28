@@ -18,6 +18,7 @@ header .top-header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FFFFFF;
 }
 
 header .top-header img {
@@ -39,13 +40,13 @@ header .jumbotron{
 .sub-title{
     font-size: 24px;
     font-weight: 400;
-    color: white;
+    color: #FFFFFF;
 }
 
 .jumbotron h1{
     font-size: 64px;
     font-weight: 600;
-    color: white;
+    color: #FFFFFF;
     line-height: 95%;
 }
 
@@ -63,12 +64,13 @@ header .jumbotron{
 .countries-date h4{
     font-size: 32px;
     font-weight: 600;
-    color: white;
+    color: #FFFFFF;
 }
 
 /* main */
 main{
    display: flex;
+   background-color: #FFFFFF;
 }
 
 main #content{
@@ -78,6 +80,7 @@ main #content{
 /* content */
 article section {
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .race-result {
@@ -88,6 +91,7 @@ article section {
 .img-result{
     width: 330px;
     object-fit: contain; 
+    border-radius: 2%;
 }
 
 article .desc-sprint-race{
@@ -115,7 +119,7 @@ article section p{
 
 /* aside */
 aside{
-    background-color: rgb(192, 228, 135);
+    background-color: #E8E8E8;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -129,7 +133,7 @@ aside h3{
 }
 
 aside .list{
-    background-color: gray;
+    /* background-color: gray; */
     padding: 20px;
 }
 
@@ -137,7 +141,7 @@ aside .list{
 .rider{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -196,6 +200,7 @@ aside .list{
         padding: 20px;
         display: flex;
         align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.285);
     }
 
     .user-profile img{
@@ -212,6 +217,14 @@ aside .list{
 
 /* footer */
 /* upper */
+footer{
+    background-color: #333333;
+}
+
+footer{
+    color: #E8E8E8;
+}
+
 footer .upper-footer{
     display: flex;
     padding: 20px 190px;
@@ -226,7 +239,7 @@ footer .group-link a{
     margin-top: 10px;
     font-weight: 400;
     text-decoration: none;
-    color: black;
+    color: #E8E8E8;
 }
 
 footer .group-link a:hover{
@@ -235,7 +248,7 @@ footer .group-link a:hover{
 
 /* lower */
 footer .lower-footer{
-    border-top: 1px solid rgb(185, 185, 185);
+    border-top: 1px solid #e8e8e837;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,7 +258,7 @@ footer .lower-footer{
 footer .lower-footer p{
     font-size: 14px;
     font-weight: 400;
-    color: black;
+    color: #E8E8E8;
 }
 
 /* mobile & tablet */
@@ -349,5 +362,6 @@ footer .lower-footer p{
         padding: 15px;
     }
 }
+
 
 
