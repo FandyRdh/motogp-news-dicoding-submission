@@ -114,22 +114,112 @@ article section p{
 }
 
 /* aside */
-main aside{
+aside{
     background-color: rgb(192, 228, 135);
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+aside h3{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+aside .list{
+    background-color: gray;
+    padding: 20px;
+}
+
+
+.rider{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+
+.name-team,.point-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.flag-country{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    /* position */
+    .position{
+        font-size: 32px;
+        font-weight: 500;
+        min-width: 40px;
+    }
+
+    .name-team {
+        min-width: 170px;
+    }
+    
+    .point-desc{
+        min-width: 40px;
+        text-align: center;
+    }
+
+
+    .name-team .name {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .name-team .team{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .point-desc desc{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    /* flag-country */
+    .flag-country img{
+        width: 42px;
+        height: 28px;
+        margin-right: 10px;
+    }
+
+
+/* user-job_titile */
+    .user-profile{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .user-profile img{
+        width: 50px;
+        border: 1px solid black;
+        border-radius: 100%;
+        margin-right: 20px;
+    }
+
+    .name-job_title .name{
+        font-size: 16px;
+        font-weight: 500;
+    }
 
 /* footer */
 /* upper */
 footer .upper-footer{
     display: flex;
-    padding: 20px 250px;
+    padding: 20px 190px;
     justify-content:space-between;
 }
 footer .group-link{
     display: flex;
     flex-direction: column;
-    /* margin-top: 20px; */
 }
 footer .group-link a{
     font-size: 14px;
